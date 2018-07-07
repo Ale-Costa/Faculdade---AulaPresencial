@@ -31,5 +31,11 @@ namespace WindowsFormsView
             listaAlunos.Show();
 
         }
+
+        private void btnExcluirAluno_Click(object sender, EventArgs e)
+        {
+            frmExcluirAluno excluiAluno = new frmExcluirAluno();
+            excluiAluno.Show();
+        }
     }
 }

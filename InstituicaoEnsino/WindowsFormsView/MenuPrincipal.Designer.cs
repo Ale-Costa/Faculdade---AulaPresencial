@@ -31,11 +31,13 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnCadastrarAluno = new System.Windows.Forms.Button();
             this.btnListarAluno = new System.Windows.Forms.Button();
+            this.btnExcluirAluno = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnExcluirAluno);
             this.groupBox1.Controls.Add(this.btnListarAluno);
             this.groupBox1.Controls.Add(this.btnCadastrarAluno);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -65,6 +67,16 @@
             this.btnListarAluno.UseVisualStyleBackColor = true;
             this.btnListarAluno.Click += new System.EventHandler(this.btnListarAluno_Click);
             // 
+            // btnExcluirAluno
+            // 
+            this.btnExcluirAluno.Location = new System.Drawing.Point(7, 80);
+            this.btnExcluirAluno.Name = "btnExcluirAluno";
+            this.btnExcluirAluno.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluirAluno.TabIndex = 2;
+            this.btnExcluirAluno.Text = "Excluir";
+            this.btnExcluirAluno.UseVisualStyleBackColor = true;
+            this.btnExcluirAluno.Click += new System.EventHandler(this.btnExcluirAluno_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -83,5 +95,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnListarAluno;
         private System.Windows.Forms.Button btnCadastrarAluno;
+        private System.Windows.Forms.Button btnExcluirAluno;
     }
 }

@@ -51,9 +51,9 @@ namespace Controllers
             contexto.SaveChanges();
         }
 
-        public void Excluir(int idAluno)
+        public void Excluir(int matricula)
         {
-            Aluno aluno = BuscarporID(idAluno);
+            Aluno aluno = BuscarporID(matricula);
             contexto.Alunos.Remove(aluno);
             contexto.SaveChanges();
         }
