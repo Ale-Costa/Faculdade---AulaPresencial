@@ -21,13 +21,10 @@ namespace WindowsFormsView
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-
-            Aluno excluirAluno = new Aluno();
-
-            excluirAluno.Matricula = (txtMatriculaAluno);
+            int matricula = int.Parse(txtMatriculaAluno.Text);
 
             AlunosController alunosController = new AlunosController();
-            alunosController.Excluir(txtMatriculaAluno);
+            alunosController.Excluir(matricula);
 
         }
     }

@@ -32,16 +32,16 @@ namespace Controllers
                         where a.Matricula == matricula
                         select a;
 
-            return (Aluno)aluno;
+            return (Aluno)aluno.FirstOrDefault();
 
 
         }
 
-        public Aluno BuscarporID(int idAluno)
-        {
+       // public Aluno BuscarPorMatricula(int idAluno)
+        //{
 
-            return contexto.Alunos.Find(idAluno);
-        }
+         //   return contexto.Alunos.Find(idAluno);
+        //}
 
 
         public void Atualizar(Aluno aluno)
@@ -53,7 +53,7 @@ namespace Controllers
 
         public void Excluir(int matricula)
         {
-            Aluno aluno = BuscarporID(matricula);
+            Aluno aluno = BuscarPorMatricula(matricula);
             contexto.Alunos.Remove(aluno);
             contexto.SaveChanges();
         }
