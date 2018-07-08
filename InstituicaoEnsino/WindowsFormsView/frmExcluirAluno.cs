@@ -27,5 +27,10 @@ namespace WindowsFormsView
             alunosController.Excluir(matricula);
 
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            txtMatriculaAluno.Text = string.Empty;
+        }
     }
 }
