@@ -36,7 +36,8 @@ namespace WindowsFormsView.TelasAluno
             AlunosController alunosController = new AlunosController();
             alunosController.Inserir(novoAluno);
 
-           
+            frmAvisoCadastrarAluno avisoCadAluno = new frmAvisoCadastrarAluno();
+            avisoCadAluno.ShowDialog();
 
 
 

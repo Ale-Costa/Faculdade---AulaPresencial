@@ -26,6 +26,8 @@ namespace WindowsFormsView
             AlunosController alunosController = new AlunosController();
             alunosController.Excluir(matricula);
 
+            frmAvisoExcluir excluirAluno = new frmAvisoExcluir();
+            excluirAluno.ShowDialog();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

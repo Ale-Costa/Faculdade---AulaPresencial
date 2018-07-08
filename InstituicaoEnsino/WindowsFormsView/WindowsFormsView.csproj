@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAvisoCadastrarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvisoCadastrarAluno.Designer.cs">
+      <DependentUpon>frmAvisoCadastrarAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAvisoExcluir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAvisoExcluir.Designer.cs">
+      <DependentUpon>frmAvisoExcluir.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmExcluirAluno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +93,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAvisoCadastrarAluno.resx">
+      <DependentUpon>frmAvisoCadastrarAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAvisoExcluir.resx">
+      <DependentUpon>frmAvisoExcluir.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmExcluirAluno.resx">
       <DependentUpon>frmExcluirAluno.cs</DependentUpon>
     </EmbeddedResource>
